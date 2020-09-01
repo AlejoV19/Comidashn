@@ -1,0 +1,353 @@
+
+		body{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+			font-family:book antiaqua;
+		}
+
+header{
+	width: 100%;
+	height: 150px;
+	background: #333;
+	color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.contenedor10 h2{
+	float: left;
+	margin: 30px;
+	font-size: 60px;
+}
+
+.contenedor10{
+	width: 98%;
+	margin: auto;
+}
+header .contenedor10{
+	display: table;
+}
+#menu-bar{
+	display: none;
+}
+header label{
+	float: right;
+	font-size: 100px;
+	margin: 20px, 0;
+	cursor: pointer;
+}
+.menu{
+	position: absolute;
+	width: 100%;
+	top: 145px;
+	left: 0;
+	height: 100vh;
+	background: rgba(51,51,51,1);
+	transition: all 0.5s;
+	transform: translateX(-100%);
+	font-size: 70px;
+}
+.menu a {
+	display: block;
+	color: white;
+	height: 160px;
+	text-decoration: none;
+	padding: 30px;
+	border-bottom: 1px solid rgba(255,2555,255,1);
+}
+
+.menu a: hover{
+	background: rgba(255,2555,255,1);
+}
+#menu-bar:checked ~ .menu{
+	transform: translateX(0%);
+}
+
+@media (min-width: 1200px){	
+	header{
+		width: 18.5%;
+		height: 100%;
+	}
+	.contenedor10 h2{
+		font-size:33.4px
+	}
+	.menu{
+		position: fixed;
+		font-size: 30px;
+		width: 18.5%;
+		transform: translate(0%);
+		top: 150px
+	}
+	.menu a{
+		border: none;
+		height: 120px;
+		padding: 10px;
+		display:inline-block;
+	}	
+	
+	header label{
+		top:90px;
+		margin: 20px;
+		margin-top: 20px;
+	}
+	.icon-food{
+		width: 30px;
+		height: 50px
+	}
+}
+
+		h1{
+			color: black;
+			z-index: 5;
+         margin: 40px;
+			margin-top: 0;
+		}
+	
+		p{
+			margin: 40px;
+			font-size: 40px;
+			text-align: justify;
+			
+		}
+		h4{
+	  margin-top: 180px;
+			font-size: 50px;
+		}
+		li{
+			margin-left: 40px;
+			list-style-type:square;
+			font-size: 40px;
+		}
+		h2{
+			margin-left: 40px;
+				font-size: 30px;
+		}
+		hr{
+			background: linear-gradient(45deg, aqua, white);
+			height: 2px;
+			width: 200px;
+			transition: 1s;
+			border-radius: 10px;
+		}
+		hr:hover{
+			width: 200px;
+			transition: 1s;
+		}
+		h3{
+			color: white;
+			font-size: 120px;			
+		}
+	
+		
+		.contenedor{
+			background: linear-gradient(45deg, white, white);
+			height: 100%;
+			width: 100%;
+		}
+			
+		
+		.contenedor h1 {
+			padding-right: 90px;
+		  
+			font-size: 90px;
+			z-index: 4;
+		}
+.contenedor1{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+}
+ 
+		.contenedor h2{
+			color: black;
+			font-size: 50px;
+		}
+		.contenedor img{
+			opacity: 1;
+			width: 100%;
+			height: 400px;
+			filter:opacity(0.7);
+		}
+		
+			.img1{
+			background: url(img/atol.jpg);
+			background-repeat: no-repeat;
+			background-size: 100vw 100vh;
+			background-attachment: fixed;
+			z-index: 3;
+			opacity: 0.8;
+				filter:brightness(80%);
+		}
+		.img2{
+			background: url(img/2.jpg);
+			background-repeat: no-repeat;
+			background-size: 100vw 100vh;
+			background-attachment: fixed;
+			z-index: 2;
+			opacity: 0.9;
+				filter:brightness(80%);
+		}
+		
+		.vacio{
+			width: 100%;
+			height: 300px;
+		}
+
+		button{
+			color: white;
+			margin: 21px;
+			border-radius: 20px;
+			background: black;
+			width: 200px;
+			height: 90px;
+			font-size: 25px;
+			border-style: inherit;
+			cursor: pointer;
+			
+		}
+
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		
+		.contenedor4{
+			width: 300px;
+			height: 300px;
+			z-index: 1;
+			margin-top: 60%;
+			margin-left: 68%;
+			background: url(img/atol2.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: absolute;
+			border-radius: 50%;
+}
+.contenedor4 p{
+	margin-left: 20%;
+}
+.contenedor5{
+			width: 300px;
+			height: 300px;
+			z-index: ;
+			margin-top: 35%;
+			margin-left: 60%;
+			background: url(img/baleadas2.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: absolute;
+			border-radius: 50%;
+}
+
+
+
+.portafolio{
+	margin-left: 10px;
+}
+
+.portafolio h6{
+	font-size: 30px;
+	margin: 4px; 20px, 50px;
+}
+.portafolio-contenedor{
+	display: flex;
+	justify-content:space-between;
+}
+
+.portafolio-item{
+	width: 30%;
+	overflow: hidden;
+	position: relative;
+}
+.portafolio-text{
+	position: absolute;
+	bottom: 0;
+	background: rgba(0,0,0,0.7);
+	color: white;
+	padding: 10px;
+	transform: translateY(100%);
+	transition: all 0.4s ease-out;
+	width: 94%;
+}
+.portafolio-text p{
+	text-align:left;
+}
+.portafolio-item:hover .portafolio-text{
+	transform:translateY(0%);
+}
+.portafolio h2{
+	margin-left: 35%;
+}
+
+.portafolio-img{
+	transition: all 0.5s;
+}
+.portafolio-item:hover .portafolio-img{
+	transform: scale(1.15);
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+	p{
+		margin-left: 20%;
+		font-size: 30px;
+	}
+	h1{
+		margin-left: 20%;
+		font-size: 30px;
+	}
+	.botones{
+				margin-left: 20%;
+
+	}
+	
+	button{
+		width: 222px;
+		padding: 0px;
+		height: 70px ;
+		font-size: 20px;
+		display:inline-block;
+	}
+	ul{
+		margin-left: 20%;
+		font-size: 5px;
+	}
+	li{
+		font-size: 27px;
+	}
+	.contenedor4{
+			width: 400px;
+			height: 400px;
+		margin-top: 4%;
+			margin-left: 70%;
+	}
+	.contenedor5{
+			width: 400px;
+			height: 400px;
+		margin-top: 4%;
+			margin-left: 65%;
+	}
+	.portafolio{
+		margin-left: 20%;
+	}
+	h4{
+		margin-left: 20%;
+		margin-top:0px;
+		font-size: 20px;
+	}
+	h2{
+		margin-left: 20%;
+	}
+	h3{
+		margin-left: 20%;
+		margin-top: 10px;
+	}
+	img{
+		width: 50px;
+		height: 50px;
+	}
+}
+
